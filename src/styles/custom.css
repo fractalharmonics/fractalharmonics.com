@@ -1,1 +1,88 @@
-@layer starlight, rapide, overrides;
+/* src/styles/custom.css */
+
+:root {
+  /* =========================
+     Primary / Accent (FH Red)
+     ========================= */
+  --sl-color-accent: #ba0000;
+  --sl-color-accent-low: #f4d6d6;
+  --sl-color-accent-high: #7a0000;
+
+  /* Accent contrast (used on buttons) */
+  --sl-color-accent-contrast: #ffffff;
+
+  /* =========================
+     Buttons & Links
+     ========================= */
+  --sl-color-link: var(--sl-color-accent);
+  --sl-color-link-hover: #7a0000;
+
+  --sl-color-button: var(--sl-color-accent);
+  --sl-color-button-hover: #7a0000;
+  --sl-color-button-active: #5c0000;
+
+  --sl-color-button-secondary: #ffffff;
+  --sl-color-button-secondary-hover: #f9e5e5;
+  --sl-color-button-secondary-active: #f2cccc;
+
+  --sl-color-button-secondary-border: #ba0000;
+
+  /* =========================
+     Text
+     ========================= */
+  --sl-color-text-accent: var(--sl-color-accent);
+
+  /* =========================
+     Borders & Focus
+     ========================= */
+  --sl-color-border-accent: #ba0000;
+  --sl-color-focus-ring: rgba(186, 0, 0, 0.4);
+}
+
+/* LIGHT */
+:root[data-theme="light"] {
+  /* Brand / accent */
+  --sl-color-accent: #ba0000;
+  --sl-color-accent-high: #7a0000;
+  --sl-color-accent-low: #f4d6d6;
+
+  /* If the theme derives states from the “green” system, remap ALL green tokens */
+  --sl-hue-green: 13;
+
+  --sl-color-green: #ba0000;
+  --sl-color-green-high: #7a0000;
+  --sl-color-green-low: #f4d6d6;
+
+  --sl-color-green-accent: #f4d6d6;        /* used for hover/fills in some themes */
+  --sl-color-green-accent-invert: #ba0000; /* inverse pairing used in some states */
+  --sl-color-green-alt: #7a0000;           /* used for hover/active variants */
+  --sl-color-green-alt-invert: #f4d6d6;
+
+  /* If any “success” badges/callouts are tied in, keep them coherent */
+  --sl-badge-success-bg: var(--sl-color-green-low);
+  --sl-badge-success-border: var(--sl-color-green);
+  --sl-badge-success-text: #ffffff;
+}
+
+/* DARK */
+:root[data-theme="dark"] {
+  --sl-color-accent: #e25a5a;
+  --sl-color-accent-high: #ffb3b3;
+  --sl-color-accent-low: #3a0f0f;
+
+  --sl-hue-green: 13;
+
+  --sl-color-green: #e25a5a;
+  --sl-color-green-high: #ffb3b3;
+  --sl-color-green-low: #3a0f0f;
+
+  --sl-color-green-accent: #3a0f0f;
+  --sl-color-green-accent-invert: #e25a5a;
+  --sl-color-green-alt: #ff7a7a;
+  --sl-color-green-alt-invert: #3a0f0f;
+
+  --sl-badge-success-bg: var(--sl-color-green-low);
+  --sl-badge-success-border: var(--sl-color-green);
+  --sl-badge-success-text: #ffffff;
+}
+

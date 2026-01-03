@@ -1,13 +1,18 @@
 ---
 title: Fractal Harmonics
-# description: Get started building your docs site with Starlight.
-# template: splash # Remove or comment out this line to display the site sidebar on this page.
-hero:
-  #tagline: Congrats on setting up a new Starlight project!
-  #image:
-  #  file: ../../assets/houston.webp
-  actions:
-    - text: Field Guide
-      link: /field-guide/
-      icon: right-arrow
 ---
+
+import YouTube from "../../components/YouTube.astro";
+import { LinkButton } from '@astrojs/starlight/components';
+
+<YouTube
+  id="SYh483dpg"
+/>
+
+<LinkButton
+  href="/field-guide/orientation"
+  variant="primary"
+  icon="right-arrow"
+>
+  View the Field Guide
+</LinkButton>
