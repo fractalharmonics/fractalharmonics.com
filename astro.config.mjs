@@ -5,6 +5,8 @@ import starlightThemeRapide from 'starlight-theme-rapide'
 
 // https://astro.build/config
 export default defineConfig({
+	site: "https://fractalharmonics.com",
+  	base: "/",
 	integrations: [
 		starlight({
 			title: 'Fractal Harmonics',
